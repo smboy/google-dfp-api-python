@@ -1,0 +1,9 @@
+dfp:
+  application_name: 'google_dfp_api_pull'
+  client_id: '20140301456-xyzpqr1abcdefghij2l3m4n535433.apps.googleusercontent.com'
+  client_secret: '1a2b3C4D5efssidhshidfh6Y'
+  refresh_token: '9/xX1Y2z3eisndnfidnnindfdonndifnu2-'
+  # The following values are optional:
+  network_code: '1234'
+  # uncomment the following if the process is ran using a proxy server
+  #https_proxy: this-is-proxy-server.xyz.com:3128
