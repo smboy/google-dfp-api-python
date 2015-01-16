@@ -38,15 +38,17 @@ optional arguments:
 
 # Information:
 
-The downloaded data file is created with ^Z delimiter (ctrl-v+ctrl-z)
-The pagesize is set as 500 (standard). there is one api pull where its optionally defined as 50000
-In some cases, the data has list objects. Those are flattened as created as multiple rows.
-Example: 
-orderID 123 has two secondary traffickers. The source gives a list.
-123,[4567,8910]
+- The downloaded data file is created with ^Z delimiter (ctrl-v+ctrl-z)
+- The pagesize is set as 500 (standard). there is one api pull where its optionally defined as 50000
+- In some cases, the data has list objects. Those are flattened as created as multiple rows.
+  
+  Example: 
+  orderID 123 has two secondary traffickers. The source gives a list.
 
-The process writes the data as 2 rows. If has list of 3 values, it writes as 3 rows -- flattening the list object.
-123,4567
-123,8910
+  123,[4567,8910]
 
-Date object is converted to YYYY-MM-DD HH24:MI:SS for database usage. you can change the format in the _ConvertDateFormat function
+  The process writes the data as 2 rows. If has list of 3 values, it writes as 3 rows -- flattening the list object.
+  123,4567
+  123,8910
+
+- Date object is converted to YYYY-MM-DD HH24:MI:SS for database usage. you can change the format in the _ConvertDateFormat function
