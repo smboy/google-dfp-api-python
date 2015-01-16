@@ -1,11 +1,13 @@
 # google-dfp-api-python
 
-Requirements:
+# Requirements:
+
 1. googleads.yaml file is required. Sample is available with the script. make sure the googleads.yaml file is in the same directory as the exec_dfp.py script
 2. The process requires a "processDir" folder for dumping data from Google. Edit the exec_dfp.py with the right processDir folder.
 3. dfp_api.param file is required. Sample is available with the script.
 
-Usage:
+# Usage:
+
 The script takes 1 required parameter and 2 optional parameters
 This script can be executed in 2 ways:
 
@@ -34,7 +36,8 @@ optional arguments:
                         This is the end datetime for incremental pull, for
                         example: 2014-06-01T00:00:00
 
-Information:
+# Information:
+
 The downloaded data file is created with ^Z delimiter (ctrl-v+ctrl-z)
 The pagesize is set as 500 (standard). there is one api pull where its optionally defined as 50000
 In some cases, the data has list objects. Those are flattened as created as multiple rows.
